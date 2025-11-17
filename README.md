@@ -30,9 +30,9 @@ The notebook is divided into several key stages:
 
 ### 2. Visual Distribution Analysis
 * Three plots were generated to visualize the distribution of the `cholesterol` variable:
-    1.  **Histogram with KDE (Kernel Density Estimate):** Shows a unimodal (single-peaked) and bell-shaped distribution.
-    2.  **Boxplot:** Demonstrates high symmetry (median almost in the center) and identifies one potential low-value outlier.
-    3.  **Q-Q (Quantile-Quantile) Plot:** Shows that the data points lie very close to the diagonal line, indicating a strong similarity to a normal distribution.
+    I.  **Histogram with KDE (Kernel Density Estimate):** Shows a unimodal (single-peaked) and bell-shaped distribution.
+    II.  **Boxplot:** Demonstrates high symmetry (median almost in the center) and identifies one potential low-value outlier.
+    III.  **Q-Q (Quantile-Quantile) Plot:** Shows that the data points lie very close to the diagonal line, indicating a strong similarity to a normal distribution.
 
 * **Visual Conclusion:** The data *appears* to be approximately normally distributed.
 
@@ -40,10 +40,10 @@ The notebook is divided into several key stages:
 * Two tests are used to statistically check the hypothesis of normality for the `cholesterol` distribution (at a significance level of $\alpha = 0.05$).
 * **Null Hypothesis ($H_0$):** The data is normally distributed.
 
-    1.  **Chi-Squared ($\chi^2$) Test:**
+    I.  **Chi-Squared ($\chi^2$) Test:**
         * *p-value:* `0.0184`
         * *Conclusion:* p < 0.05, **reject $H_0$**.
-    2.  **Shapiro-Wilk Test:**
+    II.  **Shapiro-Wilk Test:**
         * *p-value:* `0.0308`
         * *Conclusion:* p < 0.05, **reject $H_0$**.
 
@@ -71,9 +71,9 @@ The analysis yielded the following results:
 1.  **Regression Model:**
     A statistically significant positive linear relationship was established between age and cholesterol level. The final regression equation is:
 
-    $$
-    \text{cholesterol} = 151.53 + 0.6776 \times \text{age\_years}
-    $$
+$$
+\text{cholesterol} = 151.53 + 0.6776 \times \text{age\_years}
+$$
 
 2.  **Model Significance:**
     * **R-squared:** `0.501`. The model explains **50.1%** of the variability in cholesterol levels, which is a moderately strong result.
